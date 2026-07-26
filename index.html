@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>José Manrique Cruz — Tech Lead / Senior Backend Engineer</title>
+<meta name="description" content="José Manrique Cruz — Ingeniero de Sistemas, Tech Lead / Senior Backend Engineer especializado en .NET, C# y arquitecturas backend escalables.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand" aria-label="José Manrique Cruz">
+      <span class="nav__brand-mark">JM</span>
+      <span class="nav__brand-name">Manrique Cruz</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">Sobre mí</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">
+        <span class="lang-toggle__opt is-active" data-lang-opt="es">ES</span>
+        <span class="lang-toggle__sep">/</span>
+        <span class="lang-toggle__opt" data-lang-opt="en">EN</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="terminal">
+          <span class="terminal__dot" aria-hidden="true"></span>
+          <span data-i18n="hero.status">status: abierto a nuevas oportunidades</span>
+        </p>
+
+        <h1 class="hero__name">José Manrique Cruz</h1>
+        <p class="hero__role" data-i18n="hero.role">Tech Lead / Senior Backend Engineer</p>
+
+        <p class="hero__meta">
+          <span data-i18n="hero.location">Bogotá, Colombia</span>
+          <span class="hero__meta-sep">·</span>
+          <span data-i18n="hero.exp">10+ años de experiencia</span>
+          <span class="hero__meta-sep">·</span>
+          <span data-i18n="hero.remote">Abierto a remoto internacional</span>
+        </p>
+
+        <p class="hero__pitch" data-i18n="hero.pitch">
+          Soy una persona dedicada y curiosa, en aprendizaje constante. Llevo más de 4 años liderando
+          equipos de desarrollo, escuchando tanto al negocio como al equipo técnico y tomando decisiones
+          claras incluso bajo presión — aplicando SOLID y Clean Architecture sin perder de vista a las
+          personas detrás del resultado. Hoy también estoy fortaleciendo mi inglés en un instituto,
+          camino a nuevos retos internacionales.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="mailto:jmanriquecruz@gmail.com" data-i18n="hero.ctaEmail">Escribirme</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/jmanriquec" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero__photo-wrap">
+        <div class="hero__photo-frame">
+          <img class="hero__photo" src="photo.jpeg" alt="Foto de José Manrique Cruz">
+
+          <div class="floatbadge floatbadge--top">
+            <span class="floatbadge__value">10+</span>
+            <span class="floatbadge__label" data-i18n="badge.years">años de experiencia</span>
+          </div>
+
+          <div class="floatbadge floatbadge--bottom">
+            <span class="floatbadge__dot" aria-hidden="true"></span>
+            <span class="floatbadge__label" data-i18n="badge.leading">4+ años liderando equipos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / STRENGTHS ============ -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="eyebrow" data-i18n="about.eyebrow">// sobre-mí</p>
+      <h2 class="section__title" data-i18n="about.title">Extracto</h2>
+      <p class="about__text" data-i18n="about.text">
+        Ingeniero de sistemas con más de 10 años de experiencia en desarrollo de software usando .NET
+        y C#. He trabajado en proyectos para bancos, colegios, la industria de alimentos, aseguradoras
+        y empresas de gestión de TI. Más allá de la tecnología, soy una persona dedicada que disfruta
+        aprender constantemente y construir junto a otros — promoviendo calidad de código y entregas
+        incrementales de valor dentro de un equipo.
+      </p>
+
+      <div class="strengths">
+        <div class="strength">
+          <p class="strength__title" data-i18n="about.s1t">Arquitectura &amp; diseño</p>
+          <p class="strength__desc" data-i18n="about.s1d">APIs y servicios backend robustos y mantenibles, aplicando SOLID, Clean Architecture y patrones de diseño.</p>
+        </div>
+        <div class="strength">
+          <p class="strength__title" data-i18n="about.s2t">Rendimiento &amp; escalabilidad</p>
+          <p class="strength__desc" data-i18n="about.s2d">Optimización de sistemas de alta demanda y diseño de arquitecturas distribuidas orientadas a microservicios.</p>
+        </div>
+        <div class="strength strength--soft">
+          <p class="strength__title" data-i18n="about.s3t">Liderazgo &amp; mentoría</p>
+          <p class="strength__desc" data-i18n="about.s3d">4+ años acompañando equipos de desarrollo: invierto tiempo en dar retroalimentación honesta y en ver crecer a las personas con las que trabajo.</p>
+        </div>
+        <div class="strength strength--soft">
+          <p class="strength__title" data-i18n="about.s4t">Comunicación &amp; decisiones</p>
+          <p class="strength__desc" data-i18n="about.s4d">Traduzco entre negocio y equipo técnico, y tomo decisiones claras incluso bajo presión, sin perder de vista ni el resultado ni a las personas.</p>
+        </div>
+        <div class="strength">
+          <p class="strength__title" data-i18n="about.s5t">Adaptabilidad multi-stack</p>
+          <p class="strength__desc" data-i18n="about.s5d">Aunque .NET/C# es mi stack principal, entrego soluciones funcionales en Java/Spring Boot y otros lenguajes apoyándome en aprendizaje rápido y herramientas de IA.</p>
+        </div>
+        <div class="strength strength--soft">
+          <p class="strength__title" data-i18n="about.s6t">Empatía &amp; manejo de conflictos</p>
+          <p class="strength__desc" data-i18n="about.s6d">Prefiero resolver la fricción hablando directamente y buscando el punto en común, manteniendo la confianza del equipo incluso en momentos difíciles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="section section--tint" id="stack">
+    <div class="section__inner">
+      <p class="eyebrow" data-i18n="stack.eyebrow">// stack-técnico</p>
+      <h2 class="section__title" data-i18n="stack.title">Tecnologías</h2>
+
+      <div class="stackgrid">
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g1">Lenguajes &amp; Frameworks</p>
+          <ul class="tags">
+            <li>C#</li><li>.NET / .NET Core</li><li>Entity Framework</li><li>WPF</li>
+            <li>WCF / Web API</li><li>Angular</li><li>JavaScript</li>
+            <li class="tag--secondary" data-i18n="stack.java">Java / Spring Boot · adaptable</li>
+          </ul>
+        </div>
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g2">Datos &amp; Infraestructura</p>
+          <ul class="tags">
+            <li>SQL Server</li><li>MongoDB</li><li>Oracle</li><li>PostgreSQL</li>
+            <li>Docker</li><li>Azure</li><li>RabbitMQ</li>
+          </ul>
+        </div>
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g3">Arquitectura &amp; Prácticas</p>
+          <ul class="tags">
+            <li>Clean Architecture</li><li>Screaming Architecture</li><li>SOLID</li><li>Design Patterns</li>
+            <li>Microservicios</li><li>Git / DevOps</li><li>Prometheus / Grafana</li>
+            <li data-i18n="stack.ai">Desarrollo asistido por IA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <p class="eyebrow" data-i18n="projects.eyebrow">// proyectos</p>
+      <h2 class="section__title" data-i18n="projects.title">Proyectos</h2>
+      <p class="exp__subtitle" data-i18n="projects.subtitle">Porque la curiosidad no se queda solo en el trabajo — código público que construí para seguir aprendiendo.</p>
+
+      <div class="projects" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE (changelog style) ============ -->
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <p class="eyebrow" data-i18n="exp.eyebrow">// historial-laboral</p>
+      <h2 class="section__title" data-i18n="exp.title">Experiencia</h2>
+      <p class="exp__subtitle" data-i18n="exp.subtitle">Un changelog de una carrera construida versión sobre versión.</p>
+
+      <ol class="changelog" id="changelog">
+        <!-- items injected by content.js for i18n consistency, see role list below (fallback static ES markup) -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION / CERTS ============ -->
+  <section class="section section--tint" id="education">
+    <div class="section__inner">
+      <p class="eyebrow" data-i18n="edu.eyebrow">// formación</p>
+      <h2 class="section__title" data-i18n="edu.title">Educación &amp; certificaciones</h2>
+
+      <div class="edugrid">
+        <div class="edu">
+          <p class="edu__degree" data-i18n="edu.degree">Ingeniería en Informática</p>
+          <p class="edu__school">Universidad Nacional Experimental del Táchira — Venezuela (2011)</p>
+        </div>
+
+        <ul class="certs">
+          <li>AI-050T00 — Develop Generative AI Solutions with Azure OpenAI Service</li>
+          <li>AZ-204 — Developing Solutions for Microsoft Azure</li>
+          <li data-i18n="edu.c3">Introducción a la Ingeniería del Software (edX)</li>
+          <li data-i18n="edu.c4">Diplomado en Ingeniería de Software</li>
+          <li>Git and GitHub (Platzi)</li>
+          <li>Microsoft 70486 — Developing ASP.NET MVC Web Applications</li>
+          <li>Microsoft 70487 — Developing Microsoft Azure and Web Services</li>
+          <li data-i18n="edu.c8">CCNA Cisco Networking Level 1 (UNET)</li>
+        </ul>
+      </div>
+
+      <div class="langs">
+        <span class="langs__item" data-i18n="edu.langEs">Español — Nativo</span>
+        <span class="langs__item" data-i18n="edu.langEn">Inglés — Intermedio (B1), en formación activa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section__inner contact__inner">
+      <p class="eyebrow" data-i18n="contact.eyebrow">// contacto</p>
+      <h2 class="section__title" data-i18n="contact.title">Hablemos</h2>
+      <p class="contact__text" data-i18n="contact.text">
+        Soy una persona dedicada, que disfruta aprender y construir junto a otros. Si buscas a alguien
+        así para tu equipo — como Backend Developer o Tech Lead, en Colombia, LatAm o remoto
+        internacional — hablemos.
+      </p>
+
+      <div class="contact__grid">
+        <a class="contact__card" href="mailto:jmanriquecruz@gmail.com">
+          <span class="contact__label" data-i18n="contact.email">Email</span>
+          <span class="contact__value">jmanriquecruz@gmail.com</span>
+        </a>
+        <a class="contact__card" href="tel:+573108720605">
+          <span class="contact__label" data-i18n="contact.phone">Teléfono</span>
+          <span class="contact__value">+57 310 872 0605</span>
+        </a>
+        <a class="contact__card" href="https://www.linkedin.com/in/jmanriquec" target="_blank" rel="noopener">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">/in/jmanriquec</span>
+        </a>
+        <div class="contact__card contact__card--static">
+          <span class="contact__label" data-i18n="contact.location">Ubicación</span>
+          <span class="contact__value">Bogotá, Colombia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> José Manrique Cruz. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
