@@ -94,6 +94,19 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 }
 
 /* ==========================================================================
+   SCROLL PROGRESS
+   ========================================================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--coral), var(--teal));
+  z-index: 60;
+  transition: width .1s linear;
+}
+
+/* ==========================================================================
    NAV
    ========================================================================== */
 .nav {
@@ -104,7 +117,9 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   background: rgba(18, 18, 20, 0.78);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
+  transition: box-shadow .25s ease, border-color .25s ease;
 }
+.nav.is-scrolled { box-shadow: 0 8px 24px rgba(0,0,0,0.28); border-color: var(--line-strong); }
 .nav__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .nav__brand { display: flex; align-items: center; gap: 10px; }
 .nav__brand-mark {
@@ -181,6 +196,13 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   gap: 56px;
   align-items: center;
 }
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: none; }
+}
+.hero__text { animation: rise-in .7s ease both; }
+.hero__photo-wrap { animation: rise-in .8s ease .15s both; }
 
 .terminal {
   display: inline-flex; align-items: center; gap: 8px;
@@ -270,7 +292,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 /* ==========================================================================
    STACK
    ========================================================================== */
-.stackgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.stackgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 32px 36px; }
 .stackgroup__title { font-family: var(--font-mono); font-size: 13px; color: var(--coral); margin-bottom: 16px; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li {
@@ -335,12 +357,13 @@ a.project:hover { border-color: var(--coral-line); background: var(--bg-3); tran
 .certs li { font-size: 14.5px; color: var(--ink-dim); padding: 10px 0; border-bottom: 1px solid var(--line); }
 .certs li:first-child { padding-top: 0; }
 
-.langs { display: flex; gap: 14px; }
+.langs { display: flex; gap: 14px; flex-wrap: wrap; }
 .langs__item {
   font-family: var(--font-mono); font-size: 13px; color: var(--ink);
   background: var(--bg-2); border: 1px solid var(--line);
   padding: 8px 14px; border-radius: 999px;
 }
+.edu__note { margin-top: 14px; font-size: 13.5px; color: var(--ink-faint); }
 
 /* ==========================================================================
    CONTACT

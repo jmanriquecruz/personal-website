@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="nav__inner">
@@ -72,6 +74,7 @@
 
         <div class="hero__cta">
           <a class="btn btn--primary" href="mailto:jmanriquecruz@gmail.com" data-i18n="hero.ctaEmail">Escribirme</a>
+          <a class="btn btn--ghost" id="cvDownload" href="cv/Jose_ManriqueCruz_CV_ES.pdf" download data-i18n="hero.ctaCv">Descargar CV ↓</a>
           <a class="btn btn--ghost" href="https://www.linkedin.com/in/jmanriquec" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
@@ -146,24 +149,48 @@
         <div class="stackgroup">
           <p class="stackgroup__title" data-i18n="stack.g1">Lenguajes &amp; Frameworks</p>
           <ul class="tags">
-            <li>C#</li><li>.NET / .NET Core</li><li>Entity Framework</li><li>WPF</li>
-            <li>WCF / Web API</li><li>Angular</li><li>JavaScript</li>
+            <li>C#</li><li>.NET / .NET Core</li><li>ASP.NET Web API</li><li>Entity Framework</li><li>WPF</li>
+            <li>WCF</li><li>Angular</li><li>JavaScript</li>
             <li class="tag--secondary" data-i18n="stack.java">Java / Spring Boot · adaptable</li>
+          </ul>
+        </div>
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g6">Contenedores &amp; Orquestación</p>
+          <ul class="tags">
+            <li>Docker</li><li>Kubernetes</li>
+          </ul>
+        </div>
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g7">CI/CD &amp; DevOps</p>
+          <ul class="tags">
+            <li>Azure DevOps</li><li>Git</li><li>CI/CD</li><li>Prometheus / Grafana</li>
           </ul>
         </div>
         <div class="stackgroup">
           <p class="stackgroup__title" data-i18n="stack.g2">Datos &amp; Infraestructura</p>
           <ul class="tags">
             <li>SQL Server</li><li>MongoDB</li><li>Oracle</li><li>PostgreSQL</li>
-            <li>Docker</li><li>Azure</li><li>RabbitMQ</li>
+            <li>Azure</li><li>RabbitMQ</li>
           </ul>
         </div>
         <div class="stackgroup">
           <p class="stackgroup__title" data-i18n="stack.g3">Arquitectura &amp; Prácticas</p>
           <ul class="tags">
             <li>Clean Architecture</li><li>Screaming Architecture</li><li>SOLID</li><li>Design Patterns</li>
-            <li>Microservicios</li><li>Git / DevOps</li><li>Prometheus / Grafana</li>
+            <li>Microservicios</li><li>Arquitecturas distribuidas</li>
             <li data-i18n="stack.ai">Desarrollo asistido por IA</li>
+          </ul>
+        </div>
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g4">Seguridad &amp; Autenticación</p>
+          <ul class="tags">
+            <li>OAuth 2.0</li><li>JWT</li><li>OpenID Connect</li>
+          </ul>
+        </div>
+        <div class="stackgroup">
+          <p class="stackgroup__title" data-i18n="stack.g5">Automatización &amp; Datos</p>
+          <ul class="tags">
+            <li>Selenium</li><li>Python</li><li>Pandas</li>
           </ul>
         </div>
       </div>
@@ -207,8 +234,10 @@
         </div>
 
         <ul class="certs">
+          <li data-i18n="edu.c0">Cloud101 (jul. 2026)</li>
+          <li data-i18n="edu.c1">Diplomado en Arquitectura de Software — Universidad de La Sabana (feb. 2026)</li>
           <li>AI-050T00 — Develop Generative AI Solutions with Azure OpenAI Service</li>
-          <li>AZ-204 — Developing Solutions for Microsoft Azure</li>
+          <li>AZ-204 — Developing Solutions for Microsoft Azure (2026)</li>
           <li data-i18n="edu.c3">Introducción a la Ingeniería del Software (edX)</li>
           <li data-i18n="edu.c4">Diplomado en Ingeniería de Software</li>
           <li>Git and GitHub (Platzi)</li>
@@ -222,6 +251,7 @@
         <span class="langs__item" data-i18n="edu.langEs">Español — Nativo</span>
         <span class="langs__item" data-i18n="edu.langEn">Inglés — Intermedio (B1), en formación activa</span>
       </div>
+      <p class="edu__note" data-i18n="edu.note">Actualmente en programa de inglés — ETS Academy, Nashville, Tennessee.</p>
     </div>
   </section>
 
