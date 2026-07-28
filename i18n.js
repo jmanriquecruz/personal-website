@@ -30,8 +30,6 @@ const TRANSLATIONS = {
     "hero.ctaEmail": "Escribirme",
     "hero.ctaCv": "Descargar CV ↓",
     "hero.badge": "Tech Lead · .NET / C# · Java",
-    "badge.years": "años de experiencia",
-    "badge.leading": "4+ años liderando equipos",
 
     "about.eyebrow": "// sobre-mí",
     "about.title": "Extracto",
@@ -119,8 +117,6 @@ const TRANSLATIONS = {
     "hero.ctaEmail": "Get in touch",
     "hero.ctaCv": "Download CV ↓",
     "hero.badge": "Tech Lead · .NET / C# · Java",
-    "badge.years": "years of experience",
-    "badge.leading": "4+ years leading teams",
 
     "about.eyebrow": "// about-me",
     "about.title": "Summary",
