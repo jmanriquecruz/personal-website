@@ -301,7 +301,10 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   border-left: 2px solid var(--coral);
+  transition: border-color .15s ease, background .15s ease, transform .15s ease;
 }
+.strength:hover { background: var(--bg-3); transform: translateY(-2px); }
+.strength.strength--soft:hover { border-left-color: var(--teal); }
 .strength__title { font-family: var(--font-display); font-weight: 600; font-size: 16.5px; color: var(--ink); margin-bottom: 8px; }
 .strength__desc { color: var(--ink-dim); font-size: 15px; }
 .strength--soft { border-left-color: var(--teal); }
