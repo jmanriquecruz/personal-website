@@ -158,17 +158,104 @@ class ScrollProgress {
   }
 }
 
+/** Resalta en el nav el link de la sección visible mientras se hace scroll. */
+class ScrollSpy {
+  constructor(sectionSelector, linkSelector) {
+    this.sections = document.querySelectorAll(sectionSelector);
+    this.links = document.querySelectorAll(linkSelector);
+    this._observe();
+  }
+
+  _observe() {
+    if (!("IntersectionObserver" in window) || !this.sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const id = entry.target.getAttribute("id");
+          this.links.forEach((link) => {
+            link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
+          });
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+
+    this.sections.forEach((section) => observer.observe(section));
+  }
+}
+
+/** Muestra/oculta el botón "volver arriba" según el scroll. */
+class BackToTop {
+  constructor(selector, threshold = 480) {
+    this.el = document.querySelector(selector);
+    this.threshold = threshold;
+    this._bind();
+  }
+
+  _bind() {
+    if (!this.el) return;
+    window.addEventListener("scroll", () => this._toggle(), { passive: true });
+    this.el.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    this._toggle();
+  }
+
+  _toggle() {
+    this.el.classList.toggle("is-visible", window.scrollY > this.threshold);
+  }
+}
+
+/** Copia el email al portapapeles y da feedback visual momentáneo. */
+class ClipboardCopy {
+  constructor(selector, i18n) {
+    this.el = document.querySelector(selector);
+    this.i18n = i18n;
+    this.lang = "es";
+    this._bind();
+  }
+
+  setLang(lang) {
+    this.lang = lang;
+    if (this.el && !this.el.classList.contains("is-copied")) {
+      this.el.textContent = this.i18n.translate(lang, "contact.copy");
+    }
+  }
+
+  _bind() {
+    if (!this.el) return;
+    this.el.addEventListener("click", async () => {
+      const email = this.el.dataset.email;
+      try {
+        await navigator.clipboard.writeText(email);
+      } catch {
+        /* clipboard API unavailable — fail silently, mailto link still works */
+      }
+      this.el.textContent = this.i18n.translate(this.lang, "contact.copied");
+      this.el.classList.add("is-copied");
+      setTimeout(() => {
+        this.el.classList.remove("is-copied");
+        this.el.textContent = this.i18n.translate(this.lang, "contact.copy");
+      }, 1800);
+    });
+  }
+}
+
 (function bootstrap() {
   const i18n = new I18n(TRANSLATIONS);
   const experience = new ExperienceRenderer(EXPERIENCE, "#changelog");
   const projects = new ProjectsRenderer(PROJECTS, "#projects-grid");
   const cvLink = new CvLinkController("#cvDownload");
+  const clipboard = new ClipboardCopy("#copyEmailBtn", i18n);
 
   const renderAll = (lang) => {
     i18n.apply(lang);
     experience.render(lang);
     projects.render(lang);
     cvLink.update(lang);
+    clipboard.setLang(lang);
   };
 
   new NavController("#navBurger", "#navLinks", "#nav");
@@ -178,6 +265,8 @@ class ScrollProgress {
   langSwitch.set(detector.detect());
 
   new ScrollProgress("#scrollProgress");
+  new ScrollSpy("main section[id]", ".nav__links a");
+  new BackToTop("#backToTop");
 
   new ScrollReveal(".strengths", ".strength");
   new ScrollReveal(".stackgrid", ".stackgroup");

@@ -21,6 +21,11 @@ const TRANSLATIONS = {
     "hero.location": "Bogotá, Colombia",
     "hero.exp": "10+ años de experiencia",
     "hero.remote": "Abierto a remoto internacional",
+
+    "stats.years": "años de experiencia",
+    "stats.leading": "años liderando equipos",
+    "stats.industries": "industrias distintas",
+    "stats.countries": "países",
     "hero.pitch": "Soy una persona dedicada y curiosa, en aprendizaje constante. Llevo más de 4 años liderando equipos de desarrollo, escuchando tanto al negocio como al equipo técnico y tomando decisiones claras incluso bajo presión — aplicando SOLID y Clean Architecture sin perder de vista a las personas detrás del resultado. Hoy también estoy fortaleciendo mi inglés en un instituto, camino a nuevos retos internacionales.",
     "hero.ctaEmail": "Escribirme",
     "hero.ctaCv": "Descargar CV ↓",
@@ -55,6 +60,8 @@ const TRANSLATIONS = {
     "stack.g7": "CI/CD & DevOps",
     "stack.java": "Java / Spring Boot · adaptable",
     "stack.ai": "Desarrollo asistido por IA",
+    "stack.microservices": "Microservicios",
+    "stack.distributed": "Arquitecturas distribuidas",
 
     "projects.eyebrow": "// proyectos",
     "projects.title": "Proyectos",
@@ -82,6 +89,8 @@ const TRANSLATIONS = {
     "contact.email": "Email",
     "contact.phone": "Teléfono",
     "contact.location": "Ubicación",
+    "contact.copy": "Copiar",
+    "contact.copied": "¡Copiado!",
 
     "footer.rights": "Todos los derechos reservados.",
 
@@ -101,6 +110,11 @@ const TRANSLATIONS = {
     "hero.location": "Bogotá, Colombia",
     "hero.exp": "10+ years of experience",
     "hero.remote": "Open to international remote",
+
+    "stats.years": "years of experience",
+    "stats.leading": "years leading teams",
+    "stats.industries": "industries",
+    "stats.countries": "countries",
     "hero.pitch": "I'm a dedicated, curious person who's always learning. I've spent 4+ years leading development teams, listening to both the business and the technical side, and making clear decisions even under pressure — applying SOLID and Clean Architecture without losing sight of the people behind the result. I'm also currently strengthening my English at a language institute, on my way to new international challenges.",
     "hero.ctaEmail": "Get in touch",
     "hero.ctaCv": "Download CV ↓",
@@ -135,6 +149,8 @@ const TRANSLATIONS = {
     "stack.g7": "CI/CD & DevOps",
     "stack.java": "Java / Spring Boot · adaptable",
     "stack.ai": "AI-assisted development",
+    "stack.microservices": "Microservices",
+    "stack.distributed": "Distributed architectures",
 
     "projects.eyebrow": "// projects",
     "projects.title": "Projects",
@@ -162,6 +178,8 @@ const TRANSLATIONS = {
     "contact.email": "Email",
     "contact.phone": "Phone",
     "contact.location": "Location",
+    "contact.copy": "Copy",
+    "contact.copied": "Copied!",
 
     "footer.rights": "All rights reserved.",
 

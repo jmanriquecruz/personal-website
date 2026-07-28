@@ -97,6 +97,28 @@
     </div>
   </section>
 
+  <!-- ============ KEY NUMBERS ============ -->
+  <section class="stats">
+    <div class="section__inner stats__inner">
+      <div class="stat">
+        <span class="stat__value">10+</span>
+        <span class="stat__label" data-i18n="stats.years">años de experiencia</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">4+</span>
+        <span class="stat__label" data-i18n="stats.leading">años liderando equipos</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">5</span>
+        <span class="stat__label" data-i18n="stats.industries">industrias distintas</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">2</span>
+        <span class="stat__label" data-i18n="stats.countries">países</span>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ ABOUT / STRENGTHS ============ -->
   <section class="section" id="about">
     <div class="section__inner">
@@ -177,7 +199,7 @@
           <p class="stackgroup__title" data-i18n="stack.g3">Arquitectura &amp; Prácticas</p>
           <ul class="tags">
             <li>Clean Architecture</li><li>Screaming Architecture</li><li>SOLID</li><li>Design Patterns</li>
-            <li>Microservicios</li><li>Arquitecturas distribuidas</li>
+            <li data-i18n="stack.microservices">Microservicios</li><li data-i18n="stack.distributed">Arquitecturas distribuidas</li>
             <li data-i18n="stack.ai">Desarrollo asistido por IA</li>
           </ul>
         </div>
@@ -267,12 +289,15 @@
       </p>
 
       <div class="contact__grid">
-        <a class="contact__card" href="mailto:jmanriquecruz@gmail.com">
-          <span class="contact__label" data-i18n="contact.email">Email</span>
-          <span class="contact__value">jmanriquecruz@gmail.com</span>
-        </a>
-        <a class="contact__card" href="tel:+573108720605">
-          <span class="contact__label" data-i18n="contact.phone">Teléfono</span>
+        <div class="contact__card contact__card--email">
+          <a href="mailto:jmanriquecruz@gmail.com" class="contact__card-link">
+            <span class="contact__label" data-i18n="contact.email">Email</span>
+            <span class="contact__value">jmanriquecruz@gmail.com</span>
+          </a>
+          <button type="button" class="copy-btn" id="copyEmailBtn" data-email="jmanriquecruz@gmail.com" data-i18n="contact.copy" aria-label="Copiar email">Copiar</button>
+        </div>
+        <a class="contact__card" href="https://wa.me/573108720605" target="_blank" rel="noopener">
+          <span class="contact__label">WhatsApp</span>
           <span class="contact__value">+57 310 872 0605</span>
         </a>
         <a class="contact__card" href="https://www.linkedin.com/in/jmanriquec" target="_blank" rel="noopener">
@@ -288,6 +313,8 @@
   </section>
 
 </main>
+
+<button type="button" class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
 
 <footer class="footer">
   <p>&copy; <span id="year"></span> José Manrique Cruz. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
