@@ -19,7 +19,7 @@ const TRANSLATIONS = {
     "hero.status": "status: abierto a nuevas oportunidades",
     "hero.role": "Tech Lead / Senior Backend Engineer",
     "hero.location": "Bogotá, Colombia",
-    "hero.exp": "10+ años de experiencia",
+    "hero.exp": "14 años de experiencia",
     "hero.remote": "Abierto a remoto internacional",
 
     "stats.years": "años de experiencia",
@@ -33,7 +33,7 @@ const TRANSLATIONS = {
 
     "about.eyebrow": "// sobre-mí",
     "about.title": "Extracto",
-    "about.text": "Ingeniero de sistemas con más de 10 años de experiencia en desarrollo de software usando .NET y C#. He trabajado en proyectos para bancos, colegios, la industria de alimentos, aseguradoras y empresas de gestión de TI. Más allá de la tecnología, soy una persona dedicada que disfruta aprender constantemente y construir junto a otros — promoviendo calidad de código y entregas incrementales de valor dentro de un equipo.",
+    "about.text": "Ingeniero de sistemas con más de 14 años de experiencia en desarrollo de software usando .NET y C#. He trabajado en proyectos para bancos, colegios, la industria de alimentos, aseguradoras y empresas de gestión de TI. Más allá de la tecnología, soy una persona dedicada que disfruta aprender constantemente y construir junto a otros — promoviendo calidad de código y entregas incrementales de valor dentro de un equipo.",
     "about.s1t": "Arquitectura & diseño",
     "about.s1d": "APIs y servicios backend robustos y mantenibles, aplicando SOLID, Clean Architecture y patrones de diseño.",
     "about.s2t": "Rendimiento & escalabilidad",
@@ -106,7 +106,7 @@ const TRANSLATIONS = {
     "hero.status": "status: open to new opportunities",
     "hero.role": "Tech Lead / Senior Backend Engineer",
     "hero.location": "Bogotá, Colombia",
-    "hero.exp": "10+ years of experience",
+    "hero.exp": "14 years of experience",
     "hero.remote": "Open to international remote",
 
     "stats.years": "years of experience",
@@ -120,7 +120,7 @@ const TRANSLATIONS = {
 
     "about.eyebrow": "// about-me",
     "about.title": "Summary",
-    "about.text": "Systems engineer with 10+ years of experience building software with .NET and C#. He has worked on projects for banks, schools, the food industry, insurance companies and IT management services. Beyond the technology, he's a dedicated person who enjoys learning constantly and building alongside others — promoting code quality and incremental delivery of value within a team.",
+    "about.text": "Systems engineer with 14 years of experience building software with .NET and C#. He has worked on projects for banks, schools, the food industry, insurance companies and IT management services. Beyond the technology, he's a dedicated person who enjoys learning constantly and building alongside others — promoting code quality and incremental delivery of value within a team.",
     "about.s1t": "Architecture & design",
     "about.s1d": "Robust, maintainable backend APIs and services, applying SOLID, Clean Architecture and design patterns.",
     "about.s2t": "Performance & scalability",
